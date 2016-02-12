@@ -1,0 +1,70 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar .nav > li > a, .navbar .nav > li,
+.navbar .nav > li.current-menu-item > a,
+.navbar .nav > li.current-menu-ancestor > a {
+    color: #EDF2F4;
+    font-size: 1.05em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px
+}
+ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
+  background-color: #2b2d42 !important;
+  color: #FF1654 !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #ff1654;
+    font-family: "Shadows Into Light", cursive;
+}
+
+#logo:hover {
+    color: #ff1654;
+    text-decoration: none;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 180px;
+  background-color: #2B2D42;
+  /* background-image: asset-url("background1.jpeg"); */
+  background-size: cover;
+
+}
+
+.jumbotron h1, p {
+  padding: 10px;
+}
+
+.jumbotron h1 {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 2px;
+  font-size: 5.7em;
+  color: #FF1654;
+}
+
+.jumbotron p {
+  padding-bottom: 14px;
+  font-size: 1.5em;
+  color: #EDF2F4;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.btn-lg {
+  background-color: #EF233C;
+  color: #EDF2F4;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.btn-lg:hover {
+  background-color: #a60d1f;
+  color: #EDF2F4;
+  font-weight: 400;
+  font-size: 1.4em;
+}
