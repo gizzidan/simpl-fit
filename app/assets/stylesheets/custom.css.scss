@@ -11,15 +11,18 @@
     letter-spacing: 0.5px
 }
 ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
-  background-color: #2b2d42 !important;
+  background-color: #01579B !important;
   color: #FF1654 !important;
 }
 
+
+
 #logo {
     float: left;
-    font-size: 1.7em;
-    color: #ff1654;
+    font-size: 1.9em;
+    color: white;
     font-family: "Shadows Into Light", cursive;
+
 }
 
 #logo:hover {
@@ -30,8 +33,8 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 .jumbotron {
   text-align: center;
   padding: 180px;
-  background-color: #2B2D42;
-  /* background-image: asset-url("background1.jpeg"); */
+  background-color: #37474F;
+  background-image: asset-url("bluetexture.png");
   background-size: cover;
 
 }
@@ -44,13 +47,13 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 2px;
   font-size: 5.7em;
-  color: #FF1654;
+  color: white;
 }
 
 .jumbotron p {
   padding-bottom: 14px;
   font-size: 1.5em;
-  color: #EDF2F4;
+  color: #FFF3E0;
   font-weight: lighter;
   letter-spacing: 1px;
 }
