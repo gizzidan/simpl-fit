@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def check_auth
     unless user_signed_in?
-      redirect_to :controller => :pages
+      redirect_to root_path
     end
   end
 

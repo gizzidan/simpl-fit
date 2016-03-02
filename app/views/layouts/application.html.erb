@@ -2,13 +2,20 @@
 <html>
 <head>
   <title>Simplfit</title>
-  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Quicksand:400,700|Abril+Fatface|Josefin+Slab:400,600,400italic,600italic,700,700italic,300|Covered+By+Your+Grace|Handlee|Arimo:400,400italic,700,700italic|Oswald|Catamaran:400,300,500|Rubik:400,300,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Quicksand:400,700|Abril+Fatface|Josefin+Slab:400,600,400italic,600italic,700,700italic,300|Covered+By+Your+Grace|Handlee|Arimo:400,400italic,700,700italic|Oswald|Catamaran:400,300,500|Rubik:400,300,500|Brawler|Roboto+Slab:400,300,100|Source+Sans+Pro:400,300,700,900,200|Raleway+Dots|Raleway:400,300,200,100,700,800,500' rel='stylesheet' type='text/css'>
+  <script src="http://moi007.dyndns.org/igestis/theme/iabsis_v2//js/bootstrap.js?2.0-4"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+  $(function () {
+    $("#myModal").modal({show:false});
+  });
+  </script>
 </head>
-<body>
-
+<body data-no-turbolink>
+<%= render "pages/login_modal" %>
+<%= render "pages/sign_up_modal" %>
 <%= render "layouts/navigation" %>
 <%= yield %>
 </body>

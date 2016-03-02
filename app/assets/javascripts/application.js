@@ -13,9 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require angular
-//= require lodash
-//= require angular-ui-grid
-//= require restangular
 //= require turbolinks
 //= require_tree .

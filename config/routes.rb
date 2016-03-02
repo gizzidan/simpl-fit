@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  devise_scope :users do
-    get "sign_up", to: "devise/registrations#new"
-    get "sign_in", to: "devise/sessions#new"
+  
 
-  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
   root 'pages#welcome'
 
+
+  get 'profile' => 'home#profile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
