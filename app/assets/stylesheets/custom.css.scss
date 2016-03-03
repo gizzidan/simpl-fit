@@ -47,11 +47,14 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 .jumbotron {
+  position: relative;
   text-align: center;
   padding-top: 160px;
   background-color: #37474F;
   background-image: asset-url("bluetexture.png");
-  background-size: cover;
+  background-size: auto 600px;
+  background-attachment: fixed;
+  overflow: hidden;
 
 }
 

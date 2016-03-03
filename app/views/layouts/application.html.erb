@@ -14,9 +14,12 @@
   </script>
 </head>
 <body data-no-turbolink>
-<%= render "pages/login_modal" %>
-<%= render "pages/sign_up_modal" %>
-<%= render "layouts/navigation" %>
-<%= yield %>
+  <div class="container">
+    <%= render "layouts/messages" %>
+    <%= render "pages/login_modal" %>
+    <%= render "pages/sign_up_modal" %>
+    <%= render "layouts/navigation" %>
+    <%= yield %>
+  </div>
 </body>
 </html>
