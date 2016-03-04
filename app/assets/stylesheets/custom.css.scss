@@ -5,13 +5,48 @@
 .navbar .nav > li > a, .navbar .nav > li,
 .navbar .nav > li.current-menu-item > a,
 .navbar .nav > li.current-menu-ancestor > a {
-  background: transparent;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: -2px;
+  background-color: transparent;
+  -webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  -ms-transition: background-color 1s linear;
+  transition: background-color 1s linear;
   color: #EDF2F4 !important;
   font-size: 1.09em !important;
   font-family: "Quicksand", sans-serif !important;
   font-weight: 300 !important;
   letter-spacing: 0.5px !important;
 }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+.fade-in {
+  opacity: 0;
+
+  animation: fadeIn ease-in 1;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  -ms-animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+
+}
+
+
 ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   background-color: none;
   color: #FF1654 !important;
@@ -19,20 +54,23 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 .btn-login, .btn-login:link, .btn-login:visited {
-    background-color: transparent;
-    border-radius: 0;
-    color: white;
-    border: 2px solid white;
-    font-size: 1.09em;
+  margin-top: -10px;
+  background-color: transparent;
+  border-radius: 0;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.09em;
 }
 .btn-login:active, .btn-login:hover {
-    color: #FF1654;
-    border: 2px solid #FF1654;
-    font-size: 1.09em;
+  margin-top: -10px;
+  color: #FF1654;
+  border: 2px solid #FF1654;
+  font-size: 1.09em;
 }
 
 
 #logo {
+  padding-top: 20px;
   float: left;
   font-size: 1.9em;
   color: white;
@@ -41,11 +79,15 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 #logo:hover {
+  padding-top: 20px;
   background-color: none;
   color: #ff1654;
   text-decoration: none;
 }
 
+
+
+// Jumbotron styling here:
 .jumbotron {
   position: relative;
   text-align: center;
@@ -69,7 +111,7 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   color: white;
 }
 
-.jumbotron p {
+.jumbotron p,  {
   font-family: 'Raleway', sans-serif;
   padding-bottom: 14px;
   font-size: 1.8em;
@@ -77,18 +119,33 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   font-weight: 100;
 
 }
-.twitter-follow-button {
-
+#header-text {
+  font-weight: 100;
 }
 #social-media {
   padding-top: 60px;
 
 
 }
+
+
+// Landing page styling here:
 .landing-page {
-  font-family: "Oswald", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 20px;
+
 }
+
+#welcome-header h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 4.4em;
+  padding: 15px;
+}
+
+
+
 #sign-up {
   background-color: #EF233C;
   color: #EDF2F4;
