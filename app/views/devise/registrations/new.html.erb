@@ -36,11 +36,12 @@
                                                           placeholder: "Password"%>
             </div>
           <% end %>
-          <div class="form-group">
-            <%= f.submit "Sign up", class: "btn btn-success btn-lg" %>&nbsp;&nbsp;&nbsp;
+          <div class="actions">
+            <%= f.submit "Sign up", class: "btn btn-lg btn-success" %>&nbsp;&nbsp;&nbsp;
             <%= link_to user_omniauth_authorize_path(:twitter), class: "button" do %>
-          <div class="btn btn-lg btn-primary">
-            <i class="fa fa-twitter"></i> Sign in </div>
+            <a class="btn btn-lg btn-social btn-twitter">
+              <span class="fa fa-twitter"></span> Sign in with Twitter
+            </a>
 
           </div>
           <% end %>

@@ -16,30 +16,3 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-
-
-$(window).scroll(function(){
-
-  var wScroll = $(this).scrollTop();
-
-  $('.header-text').css({
-    'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-  });
-});
-
-
-
-
- $(document).scroll(function() {
-          var positionScroll = $(this).scrollTop();
-          if(positionScroll > 430) {
-            $( ".navbar" ).animate({
-            backgroundColor: "#2B2D42",
-          }, 200 );
-        } else {
-          $( ".navbar" ).animate({
-            backgroundColor: "transparent",
-          }, 200 );
-        }
-      })
-    ;

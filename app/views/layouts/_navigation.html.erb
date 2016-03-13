@@ -1,5 +1,5 @@
 <nav class="navbar navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container-fluid header">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,14 +30,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <div class="nav navbar-nav">
-            <li><%= link_to new_user_registration_path, class: "navbar-btn", id: "new-sign-up" do %>
+            <li><%= link_to "Log in", new_user_session_path, id: "new-sign-up" %>
+            <li><%= link_to new_user_registration_path, class: "navbar-btn", id: "log-in" do %>
             <div class="btn-login btn">
-              <i class="fa fa-hand-o-right"></i>&nbsp; Sign up</li>
-            </div>
-            <% end %>
-            <li><%= link_to new_user_session_path, class: "navbar-btn", id: "log-in" do %>
-            <div class="btn-login btn">
-              <i class="fa fa-sign-in"></i>&nbsp; Log in</li>
+              <i class="fa fa-hand-o-right"></i>&nbsp; Sign up </li>
             </div>
             <% end %>
         </div>
