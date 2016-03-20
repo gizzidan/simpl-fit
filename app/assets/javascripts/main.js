@@ -8,26 +8,12 @@ $(window).scroll(function(){
   });
 });
 
-/*$(window).scroll(function() {
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 400) {
-        $(".header").addClass("scrolling");
+    if (scroll >= 460) {
+        $(".navbar").addClass("scrolling");
     } else {
-        $(".header").removeClass("scrolling");
+        $(".navbar").removeClass("scrolling");
     }
-}); */
-
-$(document).scroll(function() {
-          var positionScroll = $(this).scrollTop();
-          if(positionScroll > 420) {
-            $( ".navbar" ).animate({
-            backgroundColor: "#212121",
-          }, 150 );
-        } else {
-          $( ".navbar" ).animate({
-            backgroundColor: "transparent",
-          }, 150 );
-        }
-      })
-    ;
+});

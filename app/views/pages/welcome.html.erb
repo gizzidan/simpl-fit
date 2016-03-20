@@ -1,7 +1,28 @@
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Quicksand:400,700|Abril+Fatface|Josefin+Slab:400,600,400italic,600italic,700,700italic,300|Covered+By+Your+Grace|Handlee|Arimo:400,400italic,700,700italic|Oswald|Catamaran:400,300,500|Rubik:400,300,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Quicksand:400,700|Abril+Fatface|Josefin+Slab:400,600,400italic,600italic,700,700italic,300|Covered+By+Your+Grace|Handlee|Arimo:400,400italic,700,700italic|Oswald|Lato:300,400,700,900|Hind+Siliguri:300,400,500,600|' rel='stylesheet' type='text/css'>
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  	#mc_embed_signup{background:none; clear:left;  width:100%;}
+    #mc-embedded-subscribe {  background-color: #F2244A; color: #EDF2F4; font-size: 1.12em;
+                              margin-top: -2.0px;}
 
+    #mc-embedded-subscribe:hover {
+
+                              background-color: #a60d1f;
+                              color: #EDF2F4;
+                              font-size:1.12em;
+                              margin-top: -2.0px;
+
+
+                    }
+
+
+  	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
 </head>
+<%= render "layouts/navigation" %>
+<div>
   <div class="jumbotron fade-in">
     <div class="container">
       <div class="header-text">
@@ -11,12 +32,43 @@
           access to the <span style="color: white"><b>best</b></span>
           health & fitness professionals
         </p>
-        <div>
+
+
+        <!-- Begin MailChimp Signup Form -->
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="panel panel-info panel-transparent">
+      <div class="panel-heading newsletter">
+        Give us your e-mail, and we'll let you know when we launch.
+      </div>
+      <div class="panel-body">
+        <div id="mc_embed_signup">
+        <form action="//twitter.us13.list-manage.com/subscribe/post?u=1620f54b963340bdb69908dbb&amp;id=4bdb0a57f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div align="center" id="mc_embed_signup_scroll">
+
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1620f54b963340bdb69908dbb_4bdb0a57f3" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!--End mc_embed_signup-->
+
+
+
+       <script>/* <div>
           <%= link_to "users/sign_up", class: "button" do %>
         <div class="btn btn-lrg" id="sign-up">
           <i class="fa fa-envelope"></i>&nbsp; Sign up for FREE</div>
         </div>
-        <% end %>
+        <% end %>  */</script>
       <div class="fixedElement">
 
       </div>
@@ -30,56 +82,123 @@
 
     </div>
   </div>
+</div>
+
+<div class="container-fluid landing-page fade-in" id="tagline">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <h3>Are you trying to get fit?</h3>
+    </div>
+    <div class="col-xs-10 col-xs-offset-1">
+      <h3>Trying to share your fitness know-how? </h3>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h3>Don't have time to get to the gym? </h3>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1">
+        <h3>Having trouble finding a trainer that clicks? </h3>
+      </div>
+    </div>
+</div>
 
 
-
-<div class="container landing-page">
+<div class="container-fluid landing-page" id="preview">
   <div class="row", id="main">
-    <div class="col-xs-10 col-xs-offset-1", id="welcome-header">
+    <div class="col-xs-12", id="welcome-header">
       <h1> Welcome, we connect you to... </h1>
-      <hr />
     </div>
   </div>
-  <div id="preview">
+  <div>
     <div class="row">
-      <div class="col-xs-4 infobox">
-
-          <h1 align="center"> Trainers </h1>
+      <div class="col-xs-5 col-xs-push-1 infobox">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 align="center"> Personal Trainers </h2>
+          </div>
+          <div class="panel-body">
           <p>
-            Welcome to SimplFit. This is a test paragraph for the welcome section.
-            Everything you need to know about welcome stuff will be put here.
+            Personal trainers help you achieve your fitness goals through individually-tailored exercise programs. An effective personal trainer
+            will motivate you by setting goals, providing accountability, and measuring progress. One of the most important taks of a personal trainer
+            is to ensure that you are using proper form for all prescribed exercises to prevent injury.
           </p>
-
+        </div>
       </div>
-      <div class="col-xs-4 infobox">
+    </div>
+      <div class="col-xs-5 col-xs-push-1 infobox">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 align="center"> Nutritionists </h2>
+            </div>
+            <div class="panel-body">
+              <p>
+                Getting proper nutrition can be hard. Really hard. Nutritionists are frequently consulted for assistance in weight-loss, muscle-building,
+                athletic performance, and disease maintenance. Our nutritionists are here to help you make the best food choices
+                by evaluating your nutritional needs and developing an individualized nutrition plan.
+              </br>
+                </br>
 
-          <h1 align="center"> Nutritionists </h1>
-          <p>
-            Welcome to SimplFit. This is a test paragraph for the welcome section.
-            Everything you need to know about welcome stuff will be put here.
-          </p>
-
+              </p>
+            </div>
+        </div>
       </div>
-      <div class="col-xs-4 infobox">
+      </div>
+      <div class="row">
+        <div class="col-xs-5 col-xs-push-1 infobox">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 align="center"> Genetic Counselors </h2>
+              </div>
+              <div class="panel-body">
+                <p>
+                  A Genetic Counselor is a trained master's level medical professional who works with both individuals and families to
+                  assess the probability of inheriting a certain disease. Genetic Counselors are typically used for family planning.
 
-          <h1 align="center"> Genetic Counselors </h1>
-          <p>
-            Welcome to SimplFit. This is a test paragraph for the welcome section.
-            Everything you need to know about welcome stuff will be put here.
-          </p>
+                </p>
 
+              </div>
+
+          </div>
+
+        </div>
+        <div class="col-xs-5 col-xs-push-1 infobox">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 align="center"> Clinical Geneticists </h2>
+            </div>
+            <div class="panel-body">
+              <p>
+                A Clinical Geneticist (typically M.D. or Ph.D.) evaluates patients for genetic conditions. A Clinical Geneticist can help identify
+                gene polymorphisms that may have an effect on your health and fitness.
+              </p>
+              </br>
+              
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container landing-page", id="about">
+<div class="container-fluid landing-page about">
   <div class="row">
-    <div class="col-xs-8">
-      <h1> About </h1>
+    <div class="col-xs-10 col-xs-offset-1">
+      <h1> Why SimplFit? </h1>
       <p>
-        This is our about section! Here you can learn everything about SimplFit
-        and it's founders. It was founded by William Gizzi and Ian Nugent.
+        Here at SimplFit we love sharing the feeling that fitness gives us.
+        From individually-tailored weight-lifting programs to personal nutrition consultations, SimplFit  allows everyone to engage fitness in their own way.
+        Our comprehensive market place features personal trainers, nutritionists, geneticists and genetic counselors ready and able to share their tried and tested knowledge to suit any lifestyle.
+      </p>
+      <p>
+        Finding time to go to the gym, or simply finding a gym where you fit in can be a challenge.
+        Although the internet contains a wealth of knowledge, it can be stressful and time-consuming searching for the health and fitness program that <em>works</em> for you.
+        SimplFit removes any hinderances on your path to personal health happiness by providing connections to vetted health and fitness professionals.
+      </p>
+      <p>
+        Personally, fitness plays such a large role in our lives, and we created SimplFit to help everybody have a more enjoyable and efficient fitness journey.
       </p>
     </div>
   </div>
@@ -96,7 +215,7 @@
 <div class="container landing-page", id="about">
   <div class="row">
     <div class="col-xs-8">
-      <h1> About </h1>
+      <h2> About </h2>
       <p>
         This is our about section! Here you can learn everything about SimplFit
         and it's founders. It was founded by William Gizzi and Ian Nugent.

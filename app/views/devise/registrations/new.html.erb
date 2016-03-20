@@ -1,3 +1,4 @@
+<%= render "layouts/navigationsu" %>
 <div class="container-fluid", id="registration">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -8,6 +9,18 @@
         <%= devise_error_messages! %>
 
         <form>
+          <div class="actions">
+            <%= link_to user_omniauth_authorize_path(:twitter) do %>
+            <div class= "btn btn-block btn-social btn-twitter">
+              <span class="fa fa-twitter"></span> Sign in with twitter
+            </div>
+          </div>
+          <% end %>
+
+
+
+        </br>
+
           <div class="form-group">
             <%= f.label :email %><br />
             <%= f.email_field :email, class: "form-control", autofocus: true,
@@ -16,7 +29,7 @@
 
           <div class="form-group">
             <%= f.label :username %><br />
-            <%= f.email_field :username, class: "form-control", autofocus: true,
+            <%= f.text_field :username, class: "form-control", autofocus: true,
                                     placeholder: "Username"%>
           </div>
 
@@ -37,14 +50,10 @@
             </div>
           <% end %>
           <div class="actions">
-            <%= f.submit "Sign up", class: "btn btn-lg btn-success" %>&nbsp;&nbsp;&nbsp;
-            <%= link_to user_omniauth_authorize_path(:twitter), class: "button" do %>
-            <a class="btn btn-lg btn-social btn-twitter">
-              <span class="fa fa-twitter"></span> Sign in with Twitter
-            </a>
+            <%= f.submit "Sign up", class: "button btn btn-lg btn-success" %>&nbsp;&nbsp;&nbsp;
 
           </div>
-          <% end %>
+
   </br>
 
           <div class="panel-footer">

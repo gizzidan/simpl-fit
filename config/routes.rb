@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "callbacks"}
 
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
-
+  get '/auth/:provider/callback' => 'authentications#create'
+  get 'signout', to: 'sessions#destroy', as: 'signout'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

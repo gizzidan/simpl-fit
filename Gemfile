@@ -40,6 +40,7 @@ source 'https://rails-assets.org' do
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'omniauth'
 gem 'omniauth-twitter'
