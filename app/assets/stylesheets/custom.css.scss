@@ -142,10 +142,10 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 // Jumbotron styling here:
 .jumbotron {
   height: auto;
-  position: relative;
   text-align: center;
   padding-top: 90px;
-  background-size: 1500px 650px;
+  background-position: center;
+  background-size: cover;
   background-color: #37474F;
   background-image: asset-url("bluetexture4.png");
   background-repeat: no-repeat;
@@ -222,9 +222,10 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 
 #preview {
   background-image: asset-url("canyon2.png");
-  max-width: 100%;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   height: auto;
   padding-bottom: 20px;
 
@@ -261,13 +262,26 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   font-size: 3.8em;
   padding: 25px;
 }
-.landing-page  h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.4em;
-  font-weight: 200;
-  color: #14253D;
 
+@media (max-width: 768px) {
+  .landing-page h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.8vw;
+    font-weight: 200;
+    color: #14253D;
+  }
 }
+
+@media (min-width: 768px) {
+  .landing-page  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 200;
+    color: #14253D;
+
+  }
+}
+
 
 
 

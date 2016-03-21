@@ -1,12 +1,17 @@
+if ( $(window).width() > 769) {
+  $(window).scroll(function(){
 
-$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
 
-  var wScroll = $(this).scrollTop();
-
-  $('.header-text').css({
-    'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+    $('.header-text').css({
+      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+    });
   });
-});
+}
+else {
+
+}
+
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
