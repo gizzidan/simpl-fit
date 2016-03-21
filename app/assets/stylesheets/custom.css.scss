@@ -141,13 +141,14 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 
 // Jumbotron styling here:
 .jumbotron {
-  height: 80vh;
+  height: auto;
   position: relative;
   text-align: center;
   padding-top: 90px;
   background-size: 1500px 650px;
   background-color: #37474F;
   background-image: asset-url("bluetexture4.png");
+  background-repeat: no-repeat;
   margin-right: 0 !important;
   margin-bottom: -3px !important;
   background-attachment: fixed;
@@ -199,13 +200,13 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 
 .landing-page {
   padding: 10px;
-  height: 100vh;
+  height: auto;
 
 }
 
 #tagline {
   background: linear-gradient(to right, #E3F2FD, #FFF3E0);
-  height: 70vh;
+  height: auto;
   padding: 35px;
 
 }
@@ -221,9 +222,11 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 
 #preview {
   background-image: asset-url("canyon2.png");
+  max-width: 100%;
   background-size: cover;
   background-attachment: fixed;
-  height: 110vh;
+  height: auto;
+  padding-bottom: 20px;
 
 
 }
@@ -246,10 +249,10 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 
 }
 .about {
-  height: 100vh;
   color: #EDF2F4;
   background-color: #1E88E5;
   padding-top: 8px;
+  padding: 20px;
 }
 .about h1 {
   text-align: center;
