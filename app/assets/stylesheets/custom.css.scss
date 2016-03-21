@@ -145,9 +145,9 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   position: relative;
   text-align: center;
   padding-top: 90px;
-  background-size: auto 650px;
+  background-size: 1500px 650px;
   background-color: #37474F;
-  background-image: asset-url("bluetexture2.png");
+  background-image: asset-url("bluetexture4.png");
   margin-right: 0 !important;
   margin-bottom: -3px !important;
   background-attachment: fixed;
@@ -204,7 +204,7 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 #tagline {
-
+  background: linear-gradient(to right, #E3F2FD, #FFF3E0);
   height: 70vh;
   padding: 35px;
 
@@ -220,16 +220,16 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 #preview {
-  background-image: asset-url("canyon.jpeg");
-  position: relative;
-  background-attachment: fixed;
+  background-image: asset-url("canyon2.png");
   background-size: cover;
+  background-attachment: fixed;
 
 
 }
 
 #preview p {
   font-size: 1.1em;
+  line-height: 150%;
 }
 .infobox p {
   text-align: left;
@@ -275,7 +275,6 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
   padding-bottom: 23px;
   padding-top: 12px;
   color: white;
-  text-shadow: 2px 2px #ff0000;
 }
 
 
@@ -304,9 +303,11 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
 }
 
 .footer {
-  background-color: black;
-  font-size: 1.15em !important;
-  font-family: "Nunito", sans-serif !important;
-  font-weight: 300;
-  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  font-size: 1.17em !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 400;
+  color: black;
 }
