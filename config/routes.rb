@@ -13,8 +13,9 @@ Rails.application.routes.draw do
 
   root 'pages#welcome'
 
-
   get 'profile' => 'home#profile'
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
