@@ -1,16 +1,48 @@
-<h2>Resend confirmation instructions</h2>
+<%= render "layouts/navigationsu" %>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container-fluid", id="devise-style">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Resend confirmation instructions</h2>
+    </div>
+    <div class="panel-body">
+      <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
-  </div>
+        <form>
+          <div class="form-group">
+            <%= f.label :username %><br />
+            <%= f.text_field :username, class: "form-control", autofocus: true,
+                                    placeholder: "Username"%>
+          </div>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+          <% if devise_mapping.rememberable? -%>
+            <div class="form-group">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end %>
+
+
+          <div class="actions">
+            <%= f.submit "Resend confirmation instructions", class: "btn btn-lg btn-success" %>&nbsp;&nbsp;&nbsp;
+          </div>
+
+
+
+  </br>
+
+          <div class="panel-footer">
+            <%= render "devise/shared/links" %>
+
+          </div>
+        <% end %>
+
+
+        </form>
+      </div>
+
+    </div>
+
+</div>

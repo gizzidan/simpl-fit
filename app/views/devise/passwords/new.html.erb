@@ -1,16 +1,43 @@
-<h2>Forgot your password?</h2>
+<%= render "layouts/navigationsu" %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container-fluid", id="devise-style">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Forgot your password?</h2>
+    </div>
+    <div class="panel-body">
+      <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.email_field :username, autofocus: true %>
-  </div>
+        <form>
+          <div class="form-group">
+            <%= f.label :username %><br />
+            <%= f.text_field :username, class: "form-control", autofocus: true,
+                                    placeholder: "Username"%>
+          </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+
+
+
+          <div class="actions">
+            <%= f.submit "Send me reset password instructions", class: "btn btn-lg btn-success" %>&nbsp;&nbsp;&nbsp;
+          </div>
+
+
+
+  </br>
+
+          <div class="panel-footer">
+            <%= render "devise/shared/links" %>
+
+          </div>
+        <% end %>
+
+
+        </form>
+      </div>
+
+    </div>
+
+</div>
