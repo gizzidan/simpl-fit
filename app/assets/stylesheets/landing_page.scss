@@ -2,18 +2,12 @@
   height: auto;
   text-align: center;
   padding-top: 90px;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover; /* Safari en Chrome */
-  -moz-background-size: cover; /*  Old Firefox */
-  -o-background-size: cover; /* Opera */
-  background-size: cover; /* W3C */
+  background-size:100%;
+  width:100%;
   background-color: #37474F;
-  background-image: asset-url("bluetexture4.png");
-  background-repeat: no-repeat;
+  background: asset-url("bluetexture4.png") top center no-repeat fixed;
   margin-right: 0 !important;
   margin-bottom: -3px !important;
-  background-attachment: fixed;
   overflow: hidden;
 
 }
@@ -83,15 +77,9 @@
 }
 
 #preview {
-  background-image: asset-url("canyon2.png");
-  background-size: cover;
-  -webkit-background-size: cover; /* Safari en Chrome */
-  -moz-background-size: cover; /*  Old Firefox */
-  -o-background-size: cover; /* Opera */
-  background-size: cover; /* W3C */
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: asset-url("canyon2.png") top center no-repeat fixed;
+  background-size:100%;
+  width:100%;
   height: auto;
   padding-bottom: 20px;
 
