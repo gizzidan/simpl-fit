@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def check_auth
     unless user_signed_in?
-      redirect_to root_path
+      redirect_to new_user_registration_path
     end
   end
 

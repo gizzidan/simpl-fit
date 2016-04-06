@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "callbacks", registrations: "registrations"}
 
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
-  get '/auth/:provider/callback' => 'authentications#create'
+  get '/auth/:provider/callback' => 'sessions#create'
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
 
@@ -15,9 +15,7 @@ Rails.application.routes.draw do
 
   get 'profile', to: 'home#profile'
 
-  namespace :users do
-  root :to => "home#profile"
-  end
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
