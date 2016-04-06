@@ -1,0 +1,174 @@
+.jumbotron {
+  height: auto;
+  text-align: center;
+  padding-top: 90px;
+  background-position: center;
+  background-size: cover;
+  background-color: #37474F;
+  background-image: asset-url("bluetexture4.png");
+  background-repeat: no-repeat;
+  margin-right: 0 !important;
+  margin-bottom: -3px !important;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+.jumbotron h1, p {
+  padding: 10px;
+}
+
+.jumbotron h1 {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 2px;
+  font-size: 5.7em;
+  color: white;
+}
+
+#header-text   {
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 30px;
+  font-size: 1.8em;
+  color: #FFF3E0;
+  font-weight: 200;
+
+}
+.jumbotron p {
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 2px;
+  font-size: 1.15em;
+  color: #FFF3E0;
+  font-weight: 100;
+}
+
+.newsletter {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  color: black;
+  font-weight: 300;
+}
+#social-media {
+  padding-top: 50px;
+
+
+}
+
+
+// Landing page styling here:
+
+.landing-page {
+  padding: 10px;
+  height: auto;
+
+}
+
+#tagline {
+  background: linear-gradient(to right, #E3F2FD, #FFF3E0);
+  height: auto;
+  padding: 35px;
+
+}
+
+.landing-page h3 {
+  text-align: center;
+  color: #F73D5F;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.3em;
+  font-weight: 200;
+  padding: 10px;
+}
+
+#preview {
+  background-image: asset-url("canyon2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: auto;
+  padding-bottom: 20px;
+
+
+}
+
+#preview p {
+  font-size: 1.1em;
+  line-height: 150%;
+}
+.infobox p {
+  text-align: left;
+  padding: 5px;
+  color: #14253D;
+}
+
+.landing-page p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+
+
+}
+.about {
+  color: #EDF2F4;
+  background-color: #1E88E5;
+  padding-top: 8px;
+  padding: 20px;
+}
+.about h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 3.8em;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron, .landing-page {
+    background-size: auto;
+  }
+  .landing-page h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.8vw;
+    font-weight: 200;
+    color: #14253D;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 200;
+    color: #14253D;
+
+  }
+}
+
+
+
+
+#welcome-header h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 4.8em;
+  padding-bottom: 23px;
+  padding-top: 12px;
+  color: white;
+}
+
+
+
+#sign-up {
+  background-color: #EF233C;
+  color: #EDF2F4;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+
+#sign-up:hover {
+  background-color: #a60d1f;
+  color: #EDF2F4;
+  font-weight: 400;
+  font-size: 1.4em;
+}
