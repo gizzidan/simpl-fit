@@ -84,6 +84,14 @@
   background-size: cover;
   padding-bottom: 20px;
 
+  @media (max-width: 768px) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%; /* To compensate for mobile browser address bar space */
+    background-size: 100% 100%;
+  }
+
 
 }
 
@@ -127,13 +135,11 @@
   }
 }
 
-@media only screen and (min-resolution: 2dppx) and (min-width: 539px) {
-  .jumbotron {
-    background-image: asset-url("bluetexture4@2x.png");
-  }
 
-}
 @media (min-width: 768px) {
+  .preview {
+    background-attachment: fixed;
+  }
   .landing-page  h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.8vw;
