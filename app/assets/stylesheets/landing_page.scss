@@ -47,6 +47,7 @@
 }
 #social-media {
   padding-top: 50px;
+  align-content: center;
 
 
 }
@@ -120,6 +121,9 @@
 }
 
 @media (max-width: 768px) {
+  #tagline {
+    font-size: 1.9vw;
+  }
   .landing-page h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 4.8vw;
