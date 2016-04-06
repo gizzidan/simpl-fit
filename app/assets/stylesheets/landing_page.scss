@@ -77,9 +77,12 @@
 }
 
 #preview {
-  background: asset-url("canyon2.png") center no-repeat fixed;
-  background-size:100%;
+  background-image: asset-url("canyon2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width:100%;
+  height: auto;
   padding-bottom: 20px;
 
 
